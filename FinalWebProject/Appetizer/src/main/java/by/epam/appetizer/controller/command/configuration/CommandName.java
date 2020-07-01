@@ -1,0 +1,38 @@
+package by.epam.appetizer.controller.command.configuration;
+
+public enum CommandName {
+    SHOW_HOME_PAGE,
+    SHOW_ABOUT_PAGE,
+    SHOW_MENU_PAGE,
+    
+    SHOW_SIGN_UP_PAGE,
+    SHOW_SIGN_IN_PAGE,
+    
+    SHOW_PERSONAL_CABINET_PAGE,
+    SHOW_ORDERS_LIST_PAGE,
+    SHOW_ORDER_HISTORY_PAGE,
+    SHOW_NEXT_PAGE,
+    SHOW_PREVIOUS_PAGE,
+    SHOW_ORDER_INFO_PAGE,
+    SHOW_ORDER_CONTENT_PAGE,
+    CONFIRM_ORDER,
+    CANCEL_ORDER,
+    
+    SHOW_NEW_DISH_CATEGORY_PAGE,
+    SHOW_NEW_DISH_PAGE,
+    
+    ADD_TO_CART,
+    SHOW_CART_PAGE,
+    UPDATE_QUANTITY,
+    DELETE_FROM_CART,
+    CLEAR_CART,
+    
+    ADD_ORDER,
+    
+    CHANGE_LOCALE,
+    
+    SIGN_UP,
+    CONFIRM_EMAIL,
+    SIGN_IN,
+    LOGOUT
+}

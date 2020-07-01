@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"
+              href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <div class="wrapper"
+             style="background-image: url('images/bg-signIn.jpg');">
+
+            <div class="inner">
+
+                <form action="controller" method="post">
+
+                    <h3>Sign in</h3>
+
+                    <div class="form-wrapper">
+                        <input class="form-control" name="email"
+                               type="text" placeholder="E-mail"
+                               >
+                        <i class="zmdi zmdi-account"></i>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <input class="form-control" name="password"
+                               type="password" placeholder="Password"
+                               >
+                        <i class="zmdi zmdi-lock-outline"></i>
+                    </div>
+
+                    <div class="forgot-wrapper">
+                        <a href="#">
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                        <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                    </div>
+
+
+                    <button>Log in!
+                        <i class="zmdi zmdi-long-arrow-right"></i>
+                    </button>
+                    <input type="hidden" name="commandName" value="sign_in"/>
+
+                    <div class="no-account">
+                        <span>
+                            Don't have an account?
+                        </span>
+
+                        <a href="">
+                            Sign up now
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

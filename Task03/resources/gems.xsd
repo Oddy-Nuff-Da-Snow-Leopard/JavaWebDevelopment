@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ma="http://www.trjava.by/task3"
+           targetNamespace="http://www.trjava.by/task3"
+           elementFormDefault="qualified">
+    
+    <xs:element name="gems">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="gem" type="ma:Gem" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="Gem">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="origin" type="xs:string"/>
+            <xs:element name="appearance" type="ma:appearance"/>
+            <xs:element name="properties" type="ma:properties"/>
+            <xs:element name="weight" type="xs:decimal" default="1.0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="ma:id" use="required"/>
+        <xs:attribute name="preciousness" type="ma:preciousness" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="appearance">
+        <xs:sequence>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="transparency" type="ma:transparency" default="80"/>
+            <xs:element name="cutMethod" type="ma:cutMethod"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="transparency">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="cutMethod">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="round"/>
+            <xs:enumeration value="asscher"/>
+            <xs:enumeration value="emerald"/>
+            <xs:enumeration value="oval"/>
+            <xs:enumeration value="marquise"/>
+            <xs:enumeration value="pear"/>
+            <xs:enumeration value="radiant"/>
+            <xs:enumeration value="princess"/>
+            <xs:enumeration value="heart"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="properties">
+        <xs:sequence>
+            <xs:element name="density" type="xs:decimal"/>
+            <xs:element name="refractiveIndex" type="xs:decimal"/>
+            <xs:element name="MohsHardness" type="ma:MohsHardness"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="MohsHardness">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="id">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="([A-Z])[0-9]{1,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="preciousness">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="precious"/>
+            <xs:enumeration value="semiprecious"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

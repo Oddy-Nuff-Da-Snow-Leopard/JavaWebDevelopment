@@ -1,0 +1,54 @@
+Thread 15 started!
+Thread 13 started!
+Thread 11 started!
+Thread 16 started!
+Thread 17 started!
+Thread 16 finished! Sum = 17
+Thread 13 finished! Sum = 14
+Thread 11 finished! Sum = 15
+Thread 17 finished! Sum = 18
+Thread 15 finished! Sum = 16
+
+Matrix after threads work:
+16 0 0 1 0 
+0 13 0 1 0 
+0 0 17 1 0 
+1 0 0 11 1 
+0 0 0 0 15 
+
+Thread 12 started!
+Thread 16 started!
+Thread 10 started!
+Thread 12 started!
+Thread 19 started!
+Thread 19 finished! Sum = 22
+Thread 12 finished! Sum = 15
+Thread 16 finished! Sum = 20
+Thread 12 finished! Sum = 14
+Thread 10 finished! Sum = 16
+
+Matrix after threads work:
+19 0 0 1 0 
+1 12 0 1 0 
+2 0 16 1 0 
+1 1 0 10 1 
+0 0 1 0 12 
+
+Thread 13 started!
+Thread 18 started!
+Thread 17 started!
+Thread 19 started!
+Thread 11 started!
+Thread 13 finished! Sum = 17
+Thread 17 finished! Sum = 22
+Thread 18 finished! Sum = 21
+Thread 11 finished! Sum = 19
+Thread 19 finished! Sum = 28
+
+Matrix after threads work:
+11 0 0 2 0 
+2 13 0 1 0 
+2 0 17 2 0 
+1 1 0 20 1 
+1 0 1 0 18 
+

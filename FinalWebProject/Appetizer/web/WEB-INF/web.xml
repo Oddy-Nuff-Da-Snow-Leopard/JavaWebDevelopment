@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <jsp-file>/WEB-INF/jsp/home.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>about</servlet-name>
+        <jsp-file>/WEB-INF/jsp/about.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>menu</servlet-name>
+        <jsp-file>/WEB-INF/jsp/menu.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>menu</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signIn</servlet-name>
+        <jsp-file>/WEB-INF/jsp/signIn.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signIn</servlet-name>
+        <url-pattern>/signIn</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signUp</servlet-name>
+        <jsp-file>/WEB-INF/jsp/signUp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signUp</servlet-name>
+        <url-pattern>/signUp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>personalCabinet</servlet-name>
+        <jsp-file>/WEB-INF/jsp/personalCabinet.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>personalCabinet</servlet-name>
+        <url-pattern>/personalCabinet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>orderHistory</servlet-name>
+        <jsp-file>/WEB-INF/jsp/orderHistory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderHistory</servlet-name>
+        <url-pattern>/orderHistory</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ordersList</servlet-name>
+        <jsp-file>/WEB-INF/jsp/ordersList.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ordersList</servlet-name>
+        <url-pattern>/ordersList</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>orderInfo</servlet-name>
+        <jsp-file>/WEB-INF/jsp/orderInfo.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderInfo</servlet-name>
+        <url-pattern>/orderInfo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>orderContent</servlet-name>
+        <jsp-file>/WEB-INF/jsp/orderContent.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderContent</servlet-name>
+        <url-pattern>/orderContent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>newDishCategory</servlet-name>
+        <jsp-file>/WEB-INF/jsp/newDishCategory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newDishCategory</servlet-name>
+        <url-pattern>/newDishCategory</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>newDish</servlet-name>
+        <jsp-file>/WEB-INF/jsp/newDish.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newDish</servlet-name>
+        <url-pattern>/newDish</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>cart</servlet-name>
+        <jsp-file>/WEB-INF/jsp/cart.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>by.epam.appetizer.controller.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+            <description>Default encoding</description>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+</web-app>

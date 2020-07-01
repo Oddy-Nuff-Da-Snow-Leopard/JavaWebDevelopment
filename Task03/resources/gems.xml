@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gems xmlns="http://www.trjava.by/task3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.trjava.by/task3 gems.xsd">
+	  
+    <gem id="D3" preciousness="precious">
+        <name>Diamond</name>
+        <origin>Ural mountain</origin>
+        <appearance>
+            <color>None</color>
+            <transparency>60</transparency>
+            <cutMethod>emerald</cutMethod>
+        </appearance>
+        <properties>
+            <density>3.34</density>
+            <refractiveIndex>2.341</refractiveIndex>
+            <MohsHardness>10</MohsHardness>
+        </properties>
+        <weight>5.2</weight>
+    </gem>
+    
+</gems>

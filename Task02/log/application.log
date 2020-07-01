@@ -1,0 +1,6 @@
+2019-17-23 06:17:33 WARN  by.trjava.task02.service.setter.PlaneSetter setFromLine line:76 MESSAGE: "Plane setting failed!
+2019-17-23 06:17:33 WARN  by.trjava.task02.service.impl.AirlineServiceImpl findPlanesByCriteria line:84 MESSAGE: Service layer caught a PlaneSettingException!
+2019-17-23 06:17:50 WARN  by.trjava.task02.service.setter.PlaneSetter setFromLine line:76 MESSAGE: "Plane setting failed!
+2019-17-23 06:17:50 WARN  by.trjava.task02.service.impl.AirlineServiceImpl findPlanesByCriteria line:84 MESSAGE: Service layer caught a PlaneSettingException!
+2019-18-23 06:18:01 WARN  by.trjava.task02.service.setter.PlaneSetter setFromLine line:76 MESSAGE: "Plane setting failed!
+2019-18-23 06:18:01 WARN  by.trjava.task02.service.impl.AirlineServiceImpl findPlanesByCriteria line:84 MESSAGE: Service layer caught a PlaneSettingException!
